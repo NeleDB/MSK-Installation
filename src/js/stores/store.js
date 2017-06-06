@@ -3,13 +3,13 @@ import {observable} from 'mobx';
 class Store {
 
   @observable
-  name = `msk`
+  name = `nele`
 
 }
 
 const store = new Store();
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== `production`) {
   window.store = store;
 }
 
