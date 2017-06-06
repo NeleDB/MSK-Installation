@@ -1,0 +1,25 @@
+{
+  "questions":[
+    {
+      "id" : 1,
+      "question" : "vraag1",
+      "answers" : [
+        "antwoord1.1", "antwoord1.2", "antwoord1.3"
+      ]
+    },
+    {
+      "id" : 2,
+      "question" : "vraag2",
+      "answers" : [
+        "antwoord2.1", "antwoord2.2", "antwoord2.3"
+      ]
+    },
+    {
+      "id" : 3,
+      "question" : "vraag3",
+      "answers" : [
+        "antwoord3.1", "antwoord3.2", "antwoord3.3"
+      ]
+    }
+  ]
+}

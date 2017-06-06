@@ -15409,14 +15409,10 @@ init();
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mobx_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mobx_react_devtools__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mobx_react_devtools___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_mobx_react_devtools__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_react_router_dom__ = __webpack_require__(92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Home__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mobx_react_devtools__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mobx_react_devtools___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_mobx_react_devtools__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router_dom__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Home__ = __webpack_require__(101);
 var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/App.jsx';
 
 
@@ -15425,22 +15421,19 @@ var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/ms
 
 
 
-
-
-var App = function App(_ref) {
-  var name = _ref.name;
+var App = function App() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'section',
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 10
       }
     },
-    process.env.NODE_ENV !== 'production' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_mobx_react_devtools___default.a, {
+    process.env.NODE_ENV !== 'production' ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_mobx_react_devtools___default.a, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 12
       }
     }) : null,
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -15448,7 +15441,7 @@ var App = function App(_ref) {
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 14
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -15456,11 +15449,10 @@ var App = function App(_ref) {
         {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 17
+            lineNumber: 15
           }
         },
-        'Hello, ',
-        name
+        'Hello'
       )
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -15468,15 +15460,15 @@ var App = function App(_ref) {
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 18
         }
       },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4_react_router_dom__["b" /* Route */], {
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["b" /* Route */], {
         exact: true, path: '/',
-        component: __WEBPACK_IMPORTED_MODULE_5__Home__["a" /* default */],
+        component: __WEBPACK_IMPORTED_MODULE_3__Home__["a" /* default */],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 19
         }
       })
     )
@@ -15484,16 +15476,7 @@ var App = function App(_ref) {
 };
 
 App.displayName = 'App';
-App.propTypes = {
-  name: __WEBPACK_IMPORTED_MODULE_1_prop_types__["string"].isRequired
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(function (_ref2) {
-  var store = _ref2.store;
-  return {
-    name: store.name
-  };
-})(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["observer"])(App)));
+/* harmony default export */ __webpack_exports__["a"] = (App);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
@@ -15503,24 +15486,64 @@ App.propTypes = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_data_questions_json__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assets_data_questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__assets_data_questions_json__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mobx_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/Home.jsx';
 
 
-var Home = function Home() {
+
+
+
+var Home = function Home(_ref) {
+  var currentQuestion = _ref.currentQuestion,
+      nextQuestion = _ref.nextQuestion;
+
+
+  var handleClick = function handleClick(e) {
+    e.preventDefault();
+    nextQuestion();
+  };
+
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    'p',
+    'div',
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 4
+        lineNumber: 16
       }
     },
-    'Home ... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, sit.'
+    __WEBPACK_IMPORTED_MODULE_1__assets_data_questions_json___default.a.questions.map(function (q) {
+      if (q.id === currentQuestion) console.log(q);
+    }),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'button',
+      { onClick: handleClick, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        }
+      },
+      'Click Click'
+    )
   );
 };
 
 Home.displayName = 'Home';
-/* harmony default export */ __webpack_exports__["a"] = (Home);
+Home.propTypes = {
+  currentQuestion: __WEBPACK_IMPORTED_MODULE_3_prop_types__["number"].isRequired,
+  nextQuestion: __WEBPACK_IMPORTED_MODULE_3_prop_types__["func"].isRequired
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["inject"])(function (_ref2) {
+  var store = _ref2.store;
+  var currentQuestion = store.currentQuestion,
+      nextQuestion = store.nextQuestion;
+
+  return { currentQuestion: currentQuestion, nextQuestion: nextQuestion };
+})(__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2_mobx_react__["observer"])(Home)));
 
 /***/ }),
 /* 102 */
@@ -15541,7 +15564,7 @@ Home.displayName = 'Home';
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mobx__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mobx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_mobx__);
-var _desc, _value, _class, _descriptor;
+var _desc, _value, _class, _descriptor, _descriptor2;
 
 function _initDefineProp(target, property, descriptor, context) {
   if (!descriptor) return;
@@ -15593,11 +15616,22 @@ function _initializerWarningHelper(descriptor, context) {
 var Store = (_class = function Store() {
   _classCallCheck(this, Store);
 
-  _initDefineProp(this, 'name', _descriptor, this);
-}, (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'name', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
+  _initDefineProp(this, 'currentQuestion', _descriptor, this);
+
+  _initDefineProp(this, 'nextQuestion', _descriptor2, this);
+}, (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'currentQuestion', [__WEBPACK_IMPORTED_MODULE_0_mobx__["observable"]], {
   enumerable: true,
   initializer: function initializer() {
-    return 'msk';
+    return 1;
+  }
+}), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, 'nextQuestion', [__WEBPACK_IMPORTED_MODULE_0_mobx__["action"]], {
+  enumerable: true,
+  initializer: function initializer() {
+    var _this = this;
+
+    return function () {
+      return _this.currentQuestion += 1;
+    };
   }
 })), _class);
 
@@ -29940,6 +29974,44 @@ __webpack_require__(99);
 module.exports = __webpack_require__(98);
 
 
+/***/ }),
+/* 232 */,
+/* 233 */,
+/* 234 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"questions": [
+		{
+			"id": 1,
+			"question": "vraag1",
+			"answers": [
+				"antwoord1.1",
+				"antwoord1.2",
+				"antwoord1.3"
+			]
+		},
+		{
+			"id": 2,
+			"question": "vraag2",
+			"answers": [
+				"antwoord2.1",
+				"antwoord2.2",
+				"antwoord2.3"
+			]
+		},
+		{
+			"id": 3,
+			"question": "vraag3",
+			"answers": [
+				"antwoord3.1",
+				"antwoord3.2",
+				"antwoord3.3"
+			]
+		}
+	]
+};
+
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.7d85ecf8548ee7afc8b2.js.map
+//# sourceMappingURL=main.f89f1ecd8a4fdf9e6e92.js.map

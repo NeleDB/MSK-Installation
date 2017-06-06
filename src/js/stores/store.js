@@ -1,9 +1,16 @@
-import {observable} from 'mobx';
+import {observable, action} from 'mobx';
 
 class Store {
 
   @observable
-  name = `nele`
+  currentQuestion = 1;
+
+  @action
+  nextQuestion = () => {
+    return this.currentQuestion += 1;
+  }
+
+
 
 }
 
