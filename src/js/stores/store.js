@@ -3,7 +3,7 @@ import {observable, action} from 'mobx';
 class Store {
 
   @observable
-  currentQuestion = 1;
+  currentQuestion = 0;
 
   @action
   nextQuestion = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
-import data from '../../assets/data/questions.json';
 import {inject, observer} from 'mobx-react';
 import {number, func} from 'prop-types';
+import Question from '../components/Question/';
 
 
 const Home = ({currentQuestion, nextQuestion}) => {
@@ -14,11 +14,7 @@ const Home = ({currentQuestion, nextQuestion}) => {
 
   return (
     <div>
-      {data.questions.map(q => {
-        if (q.id === currentQuestion) {
-          console.log(q.question);
-        }
-      })}
+      <Question id={currentQuestion} />
       <button onClick={handleClick}>Click Click</button>
     </div>
   );
