@@ -4,6 +4,7 @@ import DevTools from 'mobx-react-devtools';
 
 import {Route} from 'react-router-dom';
 import Home from './Home';
+import Questions from './Questions';
 
 const App = () => (
 
@@ -11,14 +12,14 @@ const App = () => (
 
     {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
 
-    <header>
-      <h1>Hello</h1>
-    </header>
-
     <section>
       <Route
         exact path='/'
         component={Home}
+      />
+      <Route
+        exact path='/questions'
+        component={Questions}
       />
     </section>
 

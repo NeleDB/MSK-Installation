@@ -1,35 +1,40 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {inject, observer} from 'mobx-react';
-import {number, func} from 'prop-types';
-import Question from '../components/Question/';
+import {func, number} from 'prop-types';
 
+const Home = ({setPlayers, players}) => {
 
-const Home = ({currentQuestion, nextQuestion}) => {
+  let $inputnumber;
 
+  const handleClick = () => {
+    setPlayers($inputnumber.value);
+  };
 
-  const handleClick = e => {
-    e.preventDefault();
-    nextQuestion();
+  const handleChange = () => {
+    setPlayers($inputnumber.value);
   };
 
   return (
     <div>
-      <Question id={currentQuestion} />
-      <button onClick={handleClick}>Click Click</button>
+      <h1>How many players?</h1>
+      <input type='number' max='10' ref={$el => $inputnumber = $el} onChange={handleChange} />
+      <Link to='/questions' onClick={handleClick} disabled={players === 0 ? `disabled` : ``}>Start!</Link>
     </div>
   );
 
 };
 
 Home.propTypes = {
-  currentQuestion: number.isRequired,
-  nextQuestion: func.isRequired
+  setPlayers: func.isRequired,
+  players: number.isRequired
 };
+
 
 export default inject(
   ({store}) => {
-    const {currentQuestion, nextQuestion} = store;
-    return {currentQuestion, nextQuestion};
+    const {setPlayers, players} = store;
+    return {setPlayers, players};
   }
 )(
   observer(Home)

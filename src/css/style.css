@@ -13,3 +13,18 @@ header {
 h1 {
   font-size: 3rem;
 }
+
+.container-image {
+  width: 100%;
+}
+
+.image {
+  height: 20rem;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.list-images {
+  display: flex;
+}
