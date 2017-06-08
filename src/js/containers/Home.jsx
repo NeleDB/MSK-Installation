@@ -3,23 +3,27 @@ import {Link} from 'react-router-dom';
 import {inject, observer} from 'mobx-react';
 import {func, number} from 'prop-types';
 
-const Home = ({setPlayers, players}) => {
+import io from 'socket.io-client';
 
-  let $inputnumber;
+const Home = ({players, setPlayers}) => {
+
+  const socket = io(window.location.host);
+  socket.on(`usersAmount`, clients => setPlayers(clients));
 
   const handleClick = () => {
-    setPlayers($inputnumber.value);
+
+
   };
 
-  const handleChange = () => {
-    setPlayers($inputnumber.value);
+  const handleJoin = () => {
+    socket.emit(`newUser`);
   };
 
   return (
     <div>
-      <h1>How many players?</h1>
-      <input type='number' max='10' ref={$el => $inputnumber = $el} onChange={handleChange} />
-      <Link to='/questions' onClick={handleClick} disabled={players === 0 ? `disabled` : ``}>Start!</Link>
+      <h1>How many players? {players}</h1>
+      <Link to='/questions' onClick={handleClick}>Start!</Link>
+      <Link to='/vote' target='_blank' onClick={handleJoin}>Join!</Link>
     </div>
   );
 

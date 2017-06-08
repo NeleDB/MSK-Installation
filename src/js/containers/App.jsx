@@ -5,6 +5,7 @@ import DevTools from 'mobx-react-devtools';
 import {Route} from 'react-router-dom';
 import Home from './Home';
 import Questions from './Questions';
+import Votes from './Votes';
 
 const App = () => (
 
@@ -20,6 +21,10 @@ const App = () => (
       <Route
         exact path='/questions'
         component={Questions}
+      />
+      <Route
+        exact path='/vote'
+        component={Votes}
       />
     </section>
 

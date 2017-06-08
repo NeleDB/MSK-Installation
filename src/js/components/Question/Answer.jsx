@@ -1,13 +1,20 @@
 import React from 'react';
 import {string, func, number} from 'prop-types';
 import {inject, observer} from 'mobx-react';
+import io from 'socket.io-client';
 
 
 const Answer = ({image, addAnswer, value, art}) => {
+  const socket = io(window.location.host);
+  // socket.on(`didSelectCard`, data => ...user & kaartje);
+
+  socket.on(`handleAnswer`, answer => {
+    console.log(answer);
+    addAnswer(answer);
+  });
 
   const handleAnswer = e => {
     e.preventDefault();
-    addAnswer(art);
   };
 
   return (
