@@ -6,6 +6,7 @@ import {Route} from 'react-router-dom';
 import Home from './Home';
 import Questions from './Questions';
 import Votes from './Votes';
+import End from './End';
 
 const App = () => (
 
@@ -25,6 +26,10 @@ const App = () => (
       <Route
         exact path='/vote'
         component={Votes}
+      />
+      <Route
+        exact path='/end'
+        component={End}
       />
     </section>
 

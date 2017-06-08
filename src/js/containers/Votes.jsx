@@ -8,6 +8,7 @@ const Votes = () => {
   const handleAnswer = e => {
     e.preventDefault();
     socket.emit(`userAnswer`, {id: socket.id, answer: e.currentTarget.value});
+    socket.emit(`checkTotalAnswers`);
   };
 
   return (

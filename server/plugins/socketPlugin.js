@@ -26,13 +26,14 @@ module.exports.register = (server, options, next) => {
     });
 
     socket.on(`userAnswer`, obj => {
-      console.log(obj);
       const {id, answer} = obj;
       console.log(id);
-      console.log(answer);
       io.emit(`handleAnswer`, answer);
     });
 
+    socket.on(`checkTotalAnswers`, () => {
+      io.emit(`handleTotal`);
+    });
 
   });
 

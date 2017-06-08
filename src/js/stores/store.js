@@ -27,7 +27,7 @@ class Store {
   @action
   nextQuestion = () => {
     if (this.currentQuestion + 1 === data.questions.length) {
-      return;
+      window.location.pathname = `/end`;
     } else {
       this.currentQuestion += 1;
       for (const key in this.pictures) {

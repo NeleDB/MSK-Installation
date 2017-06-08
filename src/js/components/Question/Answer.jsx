@@ -8,7 +8,9 @@ const Answer = ({image, addAnswer, value, art}) => {
   const socket = io(window.location.host);
   // socket.on(`didSelectCard`, data => ...user & kaartje);
 
+
   socket.on(`handleAnswer`, answer => {
+    console.log(`hello`);
     console.log(answer);
     addAnswer(answer);
   });
