@@ -56,7 +56,7 @@ server.start(err => {
         'hapi-devine-routes': {
           log,
           path: path.join(__dirname, `routes`),
-          after: 'hapi-devine-mongodb'
+          after: `hapi-devine-mongodb`
         },
 
       }

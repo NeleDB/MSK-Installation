@@ -5,6 +5,9 @@ import {inject, observer} from 'mobx-react';
 
 const Answer = ({image, addAnswer, value, art}) => {
 
+  // const socket = io(window.location.host);
+  // socket.on(`didSelectCard`, data => ...user & kaartje);
+
   const handleAnswer = e => {
     e.preventDefault();
     addAnswer(art);
