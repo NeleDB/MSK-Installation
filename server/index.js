@@ -5,8 +5,7 @@ require(`dotenv`).load({silent: true});
 
 const {
   PORT = 3000,
-  URL = `http://localhost`,
-  MONGO_URL
+  URL = `http://localhost`
 } = process.env;
 
 const Server = require(`hapi`).Server;
@@ -40,23 +39,15 @@ server.start(err => {
       log,
 
       plugins: [
-        `hapi-devine-mongodb`,
         `hapi-devine-routes`,
         `inert`
       ],
 
       pluginOptions: {
 
-        'hapi-devine-mongodb': {
-          connectionString: MONGO_URL,
-          log,
-          path: path.join(__dirname, `schemas`)
-        },
-
         'hapi-devine-routes': {
           log,
-          path: path.join(__dirname, `routes`),
-          after: `hapi-devine-mongodb`
+          path: path.join(__dirname, `routes`)
         },
 
       }
