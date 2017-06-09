@@ -1,26 +1,35 @@
 import React from 'react';
-import {string} from 'prop-types';
 
-import {inject, observer} from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
 
 import {Route} from 'react-router-dom';
 import Home from './Home';
+import Questions from './Questions';
+import Votes from './Votes';
+import End from './End';
 
-const App = ({name}) => (
+const App = () => (
 
   <section>
 
-    {process.env.NODE_ENV !== `production` ? <DevTools/> : null}
-
-    <header>
-      <h1>Hello, {name}</h1>
-    </header>
+    {process.env.NODE_ENV !== `production` ? <DevTools /> : null}
 
     <section>
       <Route
         exact path='/'
         component={Home}
+      />
+      <Route
+        exact path='/questions'
+        component={Questions}
+      />
+      <Route
+        exact path='/vote'
+        component={Votes}
+      />
+      <Route
+        exact path='/end'
+        component={End}
       />
     </section>
 
@@ -28,14 +37,4 @@ const App = ({name}) => (
 
 );
 
-App.propTypes = {
-  name: string.isRequired
-};
-
-export default inject(
-  ({store}) => ({
-    name: store.name
-  })
-)(
-  observer(App)
-);
+export default App;
