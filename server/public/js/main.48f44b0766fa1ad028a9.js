@@ -18813,7 +18813,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores__ = __webpack_require__(131);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/script.js';
+var _jsxFileName = '/Users/lottebijlsma/Documents/School/Devine/2DEV/SEM2/MAIV/MSK/Park-installatie/src/js/script.js';
 /* eslint-disable react/jsx-filename-extension */
 
 
@@ -18944,7 +18944,7 @@ module.exports = function(arraybuffer, start, end) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mobx_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_socket_io_client__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_socket_io_client__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/components/Question/Answer.jsx';
+var _jsxFileName = '/Users/lottebijlsma/Documents/School/Devine/2DEV/SEM2/MAIV/MSK/Park-installatie/src/js/components/Question/Answer.jsx';
 
 
 
@@ -18986,29 +18986,27 @@ var Answer = function Answer(_ref) {
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h1',
-        {
-          __source: {
+        { className: 'abc', __source: {
             fileName: _jsxFileName,
             lineNumber: 25
           }
         },
         art
       ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'image', src: '../../../assets/img/' + image + '.jpg', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        }
+      }),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h2',
-        {
-          __source: {
+        { className: 'vote-value', __source: {
             fileName: _jsxFileName,
-            lineNumber: 26
+            lineNumber: 27
           }
         },
         value
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'image', src: '../../../assets/img/' + image + '.jpg', __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        }
-      })
+      )
     )
   );
 };
@@ -19042,7 +19040,7 @@ Answer.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_data_questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_data_questions_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mobx_react__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_mobx_react__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/components/Question/index.js';
+var _jsxFileName = '/Users/lottebijlsma/Documents/School/Devine/2DEV/SEM2/MAIV/MSK/Park-installatie/src/js/components/Question/index.js';
 /* eslint-disable react/jsx-filename-extension */
 
 
@@ -19123,7 +19121,7 @@ Question.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Questions__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Votes__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__End__ = __webpack_require__(127);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/App.jsx';
+var _jsxFileName = '/Users/lottebijlsma/Documents/School/Devine/2DEV/SEM2/MAIV/MSK/Park-installatie/src/js/containers/App.jsx';
 
 
 
@@ -19204,7 +19202,7 @@ App.displayName = 'App';
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/End.jsx';
+var _jsxFileName = '/Users/lottebijlsma/Documents/School/Devine/2DEV/SEM2/MAIV/MSK/Park-installatie/src/js/containers/End.jsx';
 
 
 var End = function End() {
@@ -19247,7 +19245,7 @@ End.displayName = 'End';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_socket_io_client__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_socket_io_client__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/Home.jsx';
+var _jsxFileName = '/Users/lottebijlsma/Documents/School/Devine/2DEV/SEM2/MAIV/MSK/Park-installatie/src/js/containers/Home.jsx';
 
 
 
@@ -19273,40 +19271,94 @@ var Home = function Home(_ref) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    {
-      __source: {
+    { className: 'startpage', __source: {
         fileName: _jsxFileName,
         lineNumber: 23
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'h1',
-      {
-        __source: {
+      'div',
+      { className: 'players', __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         }
       },
-      'How many players? ',
-      players
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
-      { to: '/questions', onClick: handleClick, __source: {
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../../assets/img/nrOfPlayers.png', alt: 'nrOfPlayers', __source: {
           fileName: _jsxFileName,
           lineNumber: 25
         }
-      },
-      'Start!'
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        { className: 'playernumber', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26
+          }
+        },
+        players
+      )
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
-      { to: '/vote', target: '_blank', onClick: handleJoin, __source: {
+      'div',
+      { className: 'homebody', __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 28
         }
       },
-      'Join!'
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'header', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h1',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 30
+            }
+          },
+          'Vind awen match!'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 31
+            }
+          },
+          'Scan deze QR code met jouw mobiele telefoon om mee te doen 1234'
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'buttons', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
+          { to: '/vote', target: '_blank', className: 'button', onClick: handleJoin, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 34
+            }
+          },
+          'Join'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */],
+          { to: '/questions', className: 'button', onClick: handleClick, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 35
+            }
+          },
+          'Start!'
+        )
+      )
     )
   );
 };
@@ -19339,7 +19391,7 @@ Home.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Question___ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_socket_io_client__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_socket_io_client__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/Questions.jsx';
+var _jsxFileName = '/Users/lottebijlsma/Documents/School/Devine/2DEV/SEM2/MAIV/MSK/Park-installatie/src/js/containers/Questions.jsx';
 
 
 
@@ -19364,47 +19416,93 @@ var Questions = function Questions(_ref) {
 
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    {
-      __source: {
+    { className: 'startpage', __source: {
         fileName: _jsxFileName,
         lineNumber: 17
       }
     },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Question___["a" /* default */], { id: currentQuestion, __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      }
-    }),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'p',
-      {
-        __source: {
+      'div',
+      { className: 'players', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '../../assets/img/nrOfPlayers.png', alt: 'nrOfPlayers', __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         }
-      },
-      'players:',
-      players
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        { className: 'playernumber', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          }
+        },
+        players
+      )
     ),
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'button',
-      { onClick: handleClick, __source: {
+      'div',
+      { className: 'homebody', __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         }
       },
-      'Next'
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      'p',
-      {
-        __source: {
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'header', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h1',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 24
+            }
+          },
+          'Vind awen match!'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 25
+            }
+          },
+          'Selecteer een vree wijs kunstwerk en ontdek jouw kunstmatch! '
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Question___["a" /* default */], { id: currentQuestion, __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 27
         }
-      },
-      'players who need to answer ',
-      playersLeft
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'button',
+        { onClick: handleClick, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 28
+          }
+        },
+        'Next'
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'p',
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29
+          }
+        },
+        'players who need to answer ',
+        playersLeft
+      )
     )
   );
 };
@@ -19436,7 +19534,7 @@ Questions.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_socket_io_client__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_socket_io_client__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/Votes.jsx';
+var _jsxFileName = '/Users/lottebijlsma/Documents/School/Devine/2DEV/SEM2/MAIV/MSK/Park-installatie/src/js/containers/Votes.jsx';
 
 
 
@@ -36995,4 +37093,4 @@ module.exports = __webpack_require__(120);
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.d8bd1663ff6e04730c60.js.map
+//# sourceMappingURL=main.48f44b0766fa1ad028a9.js.map

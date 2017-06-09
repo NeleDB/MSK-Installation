@@ -14,11 +14,20 @@ const Questions = ({currentQuestion, nextQuestion, playersLeft, players}) => {
   socket.on(`handleTotal`, () => {if (playersLeft === 0) nextQuestion();});
 
   return (
-    <div>
-      <Question id={currentQuestion} />
-      <p>players:{players}</p>
-      <button onClick={handleClick} >Next</button>
-      <p>players who need to answer {playersLeft}</p>
+    <div className='startpage'>
+      <div className='players'>
+        <img src='../../assets/img/nrOfPlayers.png' alt='nrOfPlayers'></img>
+        <p className='playernumber'>{players}</p>
+      </div>
+      <div className='homebody'>
+        <div className='header'>
+          <h1>Vind awen match!</h1>
+          <p>Selecteer een vree wijs kunstwerk en ontdek jouw kunstmatch! </p>
+        </div>
+        <Question id={currentQuestion} />
+        <button onClick={handleClick} >Next</button>
+        <p>players who need to answer {playersLeft}</p>
+      </div>
     </div>
   );
 

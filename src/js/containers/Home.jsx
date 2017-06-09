@@ -20,10 +20,21 @@ const Home = ({players, setPlayers}) => {
   };
 
   return (
-    <div>
-      <h1>How many players? {players}</h1>
-      <Link to='/questions' onClick={handleClick}>Start!</Link>
-      <Link to='/vote' target='_blank' onClick={handleJoin}>Join!</Link>
+    <div className='startpage'>
+      <div className='players'>
+        <img src='../../assets/img/nrOfPlayers.png' alt='nrOfPlayers'></img>
+        <p className='playernumber'>{players}</p>
+      </div>
+      <div className='homebody'>
+        <div className='header'>
+          <h1>Vind awen match!</h1>
+          <p>Scan deze QR code met jouw mobiele telefoon om mee te doen 1234</p>
+        </div>
+        <div className='buttons'>
+          <Link to='/vote' target='_blank' className='button' onClick={handleJoin}>Join</Link>
+          <Link to='/questions' className='button' onClick={handleClick}>Start!</Link>
+        </div>
+      </div>
     </div>
   );
 

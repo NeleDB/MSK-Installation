@@ -5,14 +5,31 @@
   <meta charset="UTF-8">
   <title>Hello, msk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script>
+    WebFontConfig = {
+  		custom: {
+  			families: ['denmark','freight'],
+  			urls: ['assets/fonts/denmark/denmark.css',
+          'assets/fonts/freight/freight.css'
+        ]
+  		}
+  	};
 
-  
+  	(function() {
+  		var wf = document.createElement('script');
+  		wf.src = 'js/webfontloader.js';
+  		wf.type = 'text/javascript';
+  		var s = document.getElementsByTagName('script')[0];
+  		s.parentNode.insertBefore(wf, s);
+  	})();
+  	</script>
+
 
 </head>
 
 <body>
 
-  
+
   <div class='react-mount'>
 
   </div>
