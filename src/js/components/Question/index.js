@@ -11,9 +11,9 @@ const Question = ({id, a, b, c}) => {
   return (
     <div>
       <ul className='list-images'>
-          <Answer art='a' value={a} image={data.questions[id].answers[0].image} />
-          <Answer art='b' value={b} image={data.questions[id].answers[1].image} />
-          <Answer art='c' value={c} image={data.questions[id].answers[2].image} />
+          <Answer art='01' value={a} image={data.questions[id].answers[0].image} />
+          <Answer art='02' value={b} image={data.questions[id].answers[1].image} />
+          <Answer art='03' value={c} image={data.questions[id].answers[2].image} />
       </ul>
     </div>
   );

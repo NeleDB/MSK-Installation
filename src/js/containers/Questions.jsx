@@ -13,12 +13,13 @@ const Questions = ({currentQuestion, playersLeft, players}) => {
       </div>
       <div className='homebody'>
         <div className='header'>
-          <h1>Vind awen match!</h1>
-          <p>Selecteer een vree wijs kunstwerk en ontdek jouw kunstmatch! </p>
+          <h1>Wem hier prijs!</h1>
+          <p className='desc'>Selecteer een vree wijs kunstwerk en ontdek jouw kunstmatch! </p>
         </div>
         <Question id={currentQuestion} />
         <button >Next</button>
         <p>players who need to answer {playersLeft}</p>
+
       </div>
     </div>
   );
