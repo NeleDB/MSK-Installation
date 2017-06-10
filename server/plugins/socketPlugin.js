@@ -35,6 +35,10 @@ module.exports.register = (server, options, next) => {
       io.emit(`handleTotal`);
     });
 
+    socket.on(`again`, () => {
+      clients = [];
+    });
+
   });
 
   //next is aantonen dat hij verder mag gaan

@@ -1,17 +1,9 @@
 import React from 'react';
 import {inject, observer} from 'mobx-react';
-import {number, func} from 'prop-types';
+import {number} from 'prop-types';
 import Question from '../components/Question/';
-import io from 'socket.io-client';
 
-const Questions = ({currentQuestion, nextQuestion, playersLeft, players}) => {
-  const socket = io(window.location.host);
-  const handleClick = e => {
-    e.preventDefault();
-    nextQuestion();
-  };
-
-  socket.on(`handleTotal`, () => {if (playersLeft === 0) nextQuestion();});
+const Questions = ({currentQuestion, playersLeft, players}) => {
 
   return (
     <div className='startpage'>
@@ -25,7 +17,7 @@ const Questions = ({currentQuestion, nextQuestion, playersLeft, players}) => {
           <p>Selecteer een vree wijs kunstwerk en ontdek jouw kunstmatch! </p>
         </div>
         <Question id={currentQuestion} />
-        <button onClick={handleClick} >Next</button>
+        <button >Next</button>
         <p>players who need to answer {playersLeft}</p>
       </div>
     </div>
@@ -35,15 +27,14 @@ const Questions = ({currentQuestion, nextQuestion, playersLeft, players}) => {
 
 Questions.propTypes = {
   currentQuestion: number.isRequired,
-  nextQuestion: func.isRequired,
   playersLeft: number.isRequired,
   players: number.isRequired
 };
 
 export default inject(
   ({store}) => {
-    const {currentQuestion, nextQuestion, playersLeft, players} = store;
-    return {currentQuestion, nextQuestion, playersLeft, players};
+    const {currentQuestion, playersLeft, players} = store;
+    return {currentQuestion, playersLeft, players};
   }
 )(
   observer(Questions)

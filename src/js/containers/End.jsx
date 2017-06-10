@@ -1,14 +1,33 @@
 import React from 'react';
+import {inject, observer} from 'mobx-react';
+import {func} from 'prop-types';
+import {Link} from 'react-router-dom';
 
-const End = () => {
+
+const End = ({handleAgain}) => {
+
+  const handleClickAgain = () => {
+    handleAgain();
+  };
 
   return (
     <div>
       <h1>Einde quiz</h1>
-
+      <Link to='/' onClick={handleClickAgain}>Opnieuw</Link>
     </div>
   );
 
 };
 
-export default End;
+End.propTypes = {
+  handleAgain: func.isRequired
+};
+
+export default inject(
+  ({store}) => {
+    const {handleAgain} = store;
+    return {handleAgain};
+  }
+)(
+  observer(End)
+);
