@@ -12,7 +12,6 @@ module.exports.register = (server, options, next) => {
     socket.on(`newUser`, () => {
       const client = {id: socket.id};
       clients.push(client);
-      console.log(clients);
       socket.broadcast.emit(`join`, client);
       socket.emit(`usersAmount`, clients.length);
     });
@@ -20,14 +19,15 @@ module.exports.register = (server, options, next) => {
     socket.emit(`usersAmount`, clients.length);
 
     socket.on(`disconnect`, () => {
+      console.log(clients);
       clients = clients.filter(u => u.socketId !== socket.id);
+      console.log(clients);
       socket.broadcast.emit(`leave`, socket.id);
+      // clients.length -= 1;
         //iedereen behalve zichtzelf : broadcast
     });
 
-    socket.on(`userAnswer`, obj => {
-      const {id, answer} = obj;
-      console.log(id);
+    socket.on(`userAnswer`, answer => {
       io.emit(`handleAnswer`, answer);
     });
 

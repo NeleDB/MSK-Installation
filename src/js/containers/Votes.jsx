@@ -1,22 +1,21 @@
 import React from 'react';
-import io from 'socket.io-client';
+import {inject, observer} from 'mobx-react';
+import {func} from 'prop-types';
 
-const Votes = () => {
 
-  const socket = io(window.location.host);
+const Votes = ({handleAnswer}) => {
 
-  const handleAnswer = e => {
+  const ClickAnswer = e => {
+    handleAnswer(e.currentTarget.value);
     e.preventDefault();
-    socket.emit(`userAnswer`, {id: socket.id, answer: e.currentTarget.value});
-    socket.emit(`checkTotalAnswers`);
   };
 
   return (
     <div>
       <h1>Join the quiz</h1>
-      <button value='a' onClick={handleAnswer}>A</button>
-      <button value='b' onClick={handleAnswer}>B</button>
-      <button value='c' onClick={handleAnswer}>C</button>
+      <button value='a' onClick={ClickAnswer}>A</button>
+      <button value='b' onClick={ClickAnswer}>B</button>
+      <button value='c' onClick={ClickAnswer}>C</button>
 
     </div>
   );
@@ -24,7 +23,14 @@ const Votes = () => {
 };
 
 Votes.propTypes = {
-
+  handleAnswer: func.isRequired
 };
 
-export default Votes;
+export default inject(
+  ({store}) => {
+    const {handleAnswer} = store;
+    return {handleAnswer};
+  }
+)(
+  observer(Votes)
+);
