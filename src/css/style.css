@@ -9,10 +9,11 @@
 body {
   font-family: freight, 'Helvetica neue', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
-  margin: 2rem;
+  margin: 3rem;
   background: radial-gradient(var(--light-blue), var(--dark-blue));
   background-size: 100vw 100vh;
   color: white;
+  line-height: 1.92rem;
 }
 
 header {
@@ -21,7 +22,7 @@ header {
 
 h1 {
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
   font-family: denmark;
 }
@@ -39,10 +40,10 @@ a {
   position: relative;
   z-index: -1;
   height: 30rem;
-  width: 30vw;
+  width: 28vw;
   object-fit: cover;
-  margin-top: 3rem;
-  margin-right: 2rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
   box-shadow: .5rem .8rem 2rem var(--dark-blue);
 }
 
@@ -54,9 +55,9 @@ a {
 .abc {
   position: absolute;
   z-index: 12;
-  margin-top: 29rem;
-  margin-left: 31rem;
-  font-size: 8rem;
+  margin-top: 31rem;
+  margin-left: 30rem;
+  font-size: 6rem;
   text-shadow: .5rem .8rem 2rem var(--dark-blue);
 }
 
@@ -99,20 +100,66 @@ a {
 }
 
 .vote-value {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 12rem;
+  margin-left: 16.5rem;
+  margin-top: 7rem;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  background-color: white;
+  box-shadow: .5rem .8rem 2rem var(--dark-blue);
 
   &::before {
     content: url(../assets/img/heart.png);
     padding-right: 2rem;
   }
+}
 
-  color: black;
-  font-size: 2.5rem;
-  font-weight: 800;
-  width: 12rem;
-  margin-left: 17rem;
-  margin-top: 10rem;
-  padding: 1rem 2rem;
-  border-radius: 4rem;
-  background-color: white;
+.answer-btn-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.answer-btn {
+  border-radius: 1.5rem;
+  background-color: var(--light-blue);
   box-shadow: .5rem .8rem 2rem var(--dark-blue);
+  border: none;
+  width: 90vw;
+  height: 18vh;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-family: denmark;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.phone-vote {
+  margin-top: 4rem;
+}
+
+.phone-title {
+  font-size: 3rem;
+}
+
+.desc-mobile {
+  margin-top: 1rem;
+}
+
+.desc {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.button-next {
+  margin-top: 4rem;
+  border: none;
+  background-color: var(--light-blue);
+  box-shadow: .5rem .8rem 2rem var(--dark-blue);
+  border-radius: 3rem;
 }

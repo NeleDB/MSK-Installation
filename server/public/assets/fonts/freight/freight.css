@@ -1,6 +1,7 @@
 @font-face {
-  font-family: freight;
+  font-family: freightsans;
   src:
-    url(FreigSanProMed.woff2) format('woff2'),
-    url(FreigSanProMed.woff) format('woff');
+    url(freightsans.woff2) format('woff2'),
+    url(freightsans.woff) format('woff');
+  font-weight: 400;
 }

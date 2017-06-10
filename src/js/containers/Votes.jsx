@@ -12,11 +12,15 @@ const Votes = ({handleAnswer}) => {
 
   return (
     <div>
-      <h1>Join the quiz</h1>
-      <button value='a' onClick={ClickAnswer}>A</button>
-      <button value='b' onClick={ClickAnswer}>B</button>
-      <button value='c' onClick={ClickAnswer}>C</button>
-
+      <div className='phone-vote'>
+        <h1 className='phone-title'>Vree wijs gasten!</h1>
+        <p className='desc-mobile'>Welk kunstwerk vind jij het wijste? Selecteer hieronder! </p>
+      </div>
+      <div className='answer-btn-container'>
+        <button className='answer-btn' value='a' onClick={ClickAnswer}>één</button>
+        <button className='answer-btn' value='b' onClick={ClickAnswer}>twee</button>
+        <button className='answer-btn' value='c' onClick={ClickAnswer}>drie</button>
+      </div>
     </div>
   );
 
