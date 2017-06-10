@@ -1,9 +1,18 @@
 @import 'reset';
 
+:root {
+  --dark-blue: #494dc9;
+  --light-blue: #6b6ff4;
+  --shadow-blue: #1d22b1;
+}
+
 body {
-  font-family: 'Helvetica neue', Helvetica, Arial, sans-serif;
+  font-family: freight, 'Helvetica neue', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   margin: 2rem;
+  background: radial-gradient(var(--light-blue), var(--dark-blue));
+  background-size: 100vw 100vh;
+  color: white;
 }
 
 header {
@@ -11,7 +20,15 @@ header {
 }
 
 h1 {
+  color: white;
   font-size: 3rem;
+  font-weight: 800;
+  font-family: denmark;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .container-image {
@@ -19,12 +36,83 @@ h1 {
 }
 
 .image {
-  height: 20rem;
-  width: 100%;
-  object-fit: contain;
-  cursor: pointer;
+  position: relative;
+  z-index: -1;
+  height: 30rem;
+  width: 30vw;
+  object-fit: cover;
+  margin-top: 3rem;
+  margin-right: 2rem;
+  box-shadow: .5rem .8rem 2rem var(--dark-blue);
 }
 
 .list-images {
+  z-index: -12;
   display: flex;
+}
+
+.abc {
+  position: absolute;
+  z-index: 12;
+  margin-top: 29rem;
+  margin-left: 31rem;
+  font-size: 8rem;
+  text-shadow: .5rem .8rem 2rem var(--dark-blue);
+}
+
+.players {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.playernumber {
+  font-family: denmark;
+  font-size: 2rem;
+  font-weight: 800;
+  padding-left: 2rem;
+}
+
+.startpage {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.homebody {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button {
+  margin-left: 5rem;
+  margin-right: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  background-color: var(--light-blue);
+  box-shadow: .5rem .8rem 2rem var(--dark-blue);
+}
+
+.buttons {
+  margin-top: 30rem;
+}
+
+.vote-value {
+
+  &::before {
+    content: url(../assets/img/heart.png);
+    padding-right: 2rem;
+  }
+
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 12rem;
+  margin-left: 17rem;
+  margin-top: 10rem;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  background-color: white;
+  box-shadow: .5rem .8rem 2rem var(--dark-blue);
 }

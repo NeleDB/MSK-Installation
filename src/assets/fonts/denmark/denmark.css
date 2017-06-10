@@ -1,0 +1,6 @@
+@font-face {
+  font-family: denmark;
+  src:
+    url(denmark_04_bold-webfont.woff2) format('woff2'),
+    url(denmark_04_bold-webfont.woff) format('woff');
+}

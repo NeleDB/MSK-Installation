@@ -5,18 +5,39 @@
   <meta charset="UTF-8">
   <title>Hello, msk</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script>
+    WebFontConfig = {
+  		custom: {
+  			families: ['denmark','freight'],
+  			urls: ['assets/fonts/denmark/denmark.css',
+          'assets/fonts/freight/freight.css'
+        ]
+  		}
+  	};
 
-  
+  	(function() {
+  		var wf = document.createElement('script');
+  		wf.src = 'js/webfontloader.js';
+  		wf.type = 'text/javascript';
+  		var s = document.getElementsByTagName('script')[0];
+  		s.parentNode.insertBefore(wf, s);
+  	})();
+  	</script>
+
 
 <link href="/css/style.css" rel="stylesheet"></head>
 
 <body>
 
-  
+
   <div class='react-mount'>
 
   </div>
 
+<<<<<<< HEAD
 <script type="text/javascript" src="/js/main.fc91d5a80e6bd4f7b724.js"></script></body>
+=======
+<script type="text/javascript" src="/js/main.48f44b0766fa1ad028a9.js"></script></body>
+>>>>>>> 5799f9e261df28579199a458962b01ccb8c78c08
 
 </html>

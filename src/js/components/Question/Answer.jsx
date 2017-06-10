@@ -22,9 +22,9 @@ const Answer = ({image, addAnswer, value, art}) => {
   return (
     <li onClick={handleAnswer}>
       <div className='container-image'>
-        <h1>{art}</h1>
-        <h2>{value}</h2>
+        <h1 className='abc'>{art}</h1>
         <img className='image' src={`../../../assets/img/${image}.jpg`} />
+        <h2 className='vote-value'>{value}</h2>
       </div>
     </li>
   );
