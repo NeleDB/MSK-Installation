@@ -17,7 +17,6 @@ const Questions = ({currentQuestion, playersLeft, players}) => {
           <p className='desc'>Selecteer een vree wijs kunstwerk en ontdek jouw kunstmatch! </p>
         </div>
         <Question id={currentQuestion} />
-        <button >Next</button>
         <p>players who need to answer {playersLeft}</p>
 
       </div>
