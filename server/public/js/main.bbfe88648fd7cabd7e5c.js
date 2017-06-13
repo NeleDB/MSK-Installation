@@ -19237,9 +19237,9 @@ var Home = function Home(_ref) {
               lineNumber: 22
             }
           },
-          'Scan deze QR code met jouw mobiele telefoon om mee te doen 1234'
+          'Scan deze QR code met jouw mobiele telefoon om mee te doen'
         ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { scr: '../../assets/img/qr-code.png', __source: {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'qr-code', src: '../../assets/img/qr-code-circle.png', width: '324', height: '324', __source: {
             fileName: _jsxFileName,
             lineNumber: 23
           }
@@ -37199,4 +37199,4 @@ module.exports = __webpack_require__(119);
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.934aba362f7e36aeb505.js.map
+//# sourceMappingURL=main.bbfe88648fd7cabd7e5c.js.map
