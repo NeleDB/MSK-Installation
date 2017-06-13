@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: freight, 'Helvetica neue', Helvetica, Arial, sans-serif;
+  font-family: freightmedium, 'Helvetica neue', Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   margin: 3rem;
   background: radial-gradient(var(--light-blue), var(--dark-blue));
@@ -23,7 +23,6 @@ header {
 h1 {
   color: white;
   font-size: 4rem;
-  font-weight: 800;
   font-family: denmark;
 }
 
