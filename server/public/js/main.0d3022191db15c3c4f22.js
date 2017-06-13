@@ -18713,7 +18713,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__stores__ = __webpack_require__(130);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/script.js';
+var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code-installation/src/js/script.js';
 /* eslint-disable react/jsx-filename-extension */
 
 
@@ -18842,7 +18842,7 @@ module.exports = function(arraybuffer, start, end) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mobx_react__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/components/Question/Answer.jsx';
+var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code-installation/src/js/components/Question/Answer.jsx';
 
 
 
@@ -18926,7 +18926,7 @@ Answer.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__assets_data_questions_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__assets_data_questions_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mobx_react__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_mobx_react__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/components/Question/index.js';
+var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code-installation/src/js/components/Question/index.js';
 /* eslint-disable react/jsx-filename-extension */
 
 
@@ -19007,7 +19007,7 @@ Question.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Questions__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Votes__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__End__ = __webpack_require__(126);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/App.jsx';
+var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code-installation/src/js/containers/App.jsx';
 
 
 
@@ -19093,7 +19093,7 @@ App.displayName = 'App';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router_dom__ = __webpack_require__(44);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/End.jsx';
+var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code-installation/src/js/containers/End.jsx';
 
 
 
@@ -19161,7 +19161,7 @@ End.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mobx_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/Home.jsx';
+var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code-installation/src/js/containers/Home.jsx';
 
 
 
@@ -19296,7 +19296,7 @@ Home.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Question___ = __webpack_require__(124);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/Questions.jsx';
+var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code-installation/src/js/containers/Questions.jsx';
 
 
 
@@ -19428,7 +19428,7 @@ Questions.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mobx_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_mobx_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code/src/js/containers/Votes.jsx';
+var _jsxFileName = '/Users/neledebruycker/Devine/2016-2017/semester2/major IV/msk/development/code-installation/src/js/containers/Votes.jsx';
 
 
 
@@ -37194,4 +37194,4 @@ module.exports = __webpack_require__(119);
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.54188ca9e655d32a4a41.js.map
+//# sourceMappingURL=main.0d3022191db15c3c4f22.js.map
