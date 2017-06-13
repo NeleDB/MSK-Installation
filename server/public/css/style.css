@@ -78,6 +78,8 @@ h1 {
   font-size: 64px;
   font-size: 4rem;
   font-family: denmark;
+  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 a {
@@ -92,15 +94,13 @@ a {
 .image {
   position: relative;
   z-index: -1;
-  height: 480px;
-  height: 30rem;
+  height: 320px;
+  height: 20rem;
   width: 28vw;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-top: 32px;
-  margin-top: 2rem;
-  margin-right: 48px;
-  margin-right: 3rem;
+  margin: 64px 24px;
+  margin: 4rem 1.5rem;
   box-shadow: .5rem .8rem 2rem #494dc9;
 }
 
@@ -114,12 +114,12 @@ a {
 .abc {
   position: absolute;
   z-index: 12;
-  margin-top: 496px;
-  margin-top: 31rem;
-  margin-left: 480px;
-  margin-left: 30rem;
-  font-size: 96px;
-  font-size: 6rem;
+  margin-top: 376px;
+  margin-top: 23.5rem;
+  margin-left: 352px;
+  margin-left: 22rem;
+  font-size: 80px;
+  font-size: 5rem;
   text-shadow: 8px 12.8px 32px #494dc9;
   text-shadow: .5rem .8rem 2rem #494dc9;
 }
@@ -177,8 +177,16 @@ a {
 }
 
 .buttons {
-  margin-top: 480px;
-  margin-top: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: -64px;
+  margin-left: -4rem;
+  margin-top: 112px;
+  margin-top: 7rem;
 }
 
 .vote-value {
@@ -186,15 +194,13 @@ a {
   font-size: 40px;
   font-size: 2.5rem;
   font-weight: 800;
-  width: 192px;
-  width: 12rem;
-  margin-left: 264px;
-  margin-left: 16.5rem;
-  margin-top: 112px;
-  margin-top: 7rem;
   padding: 16px 32px;
   padding: 1rem 2rem;
   border-radius: 4rem;
+  width: 208px;
+  width: 13rem;
+  margin-left: 144px;
+  margin-left: 9rem;
   background-color: white;
   box-shadow: .5rem .8rem 2rem #494dc9
 }
@@ -267,6 +273,11 @@ a {
   background-color: #6b6ff4;
   box-shadow: .5rem .8rem 2rem #494dc9;
   border-radius: 3rem;
+}
+
+.qr-img {
+  margin-top: 48px;
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map*/
