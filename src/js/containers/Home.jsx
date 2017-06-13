@@ -19,7 +19,8 @@ const Home = ({players, handleJoin}) => {
       <div className='homebody'>
         <div className='header'>
           <h1>Vind awen match!</h1>
-          <p>Scan deze QR code met jouw mobiele telefoon om mee te doen 1234</p>
+          <p>Scan deze QR code met jouw mobiele telefoon om mee te doen</p>
+          <img src='../../img/qr-code-circle.png' width='320' height='320' />
         </div>
         <div className='buttons'>
           <Link to='/vote' target='_blank' className='button' onClick={handleClickJoin}>Join</Link>
