@@ -86,6 +86,10 @@ a {
   text-align: center;
 }
 
+.qr-code {
+  margin-top: 10rem;
+}
+
 .button {
   margin-left: 5rem;
   margin-right: 1rem;
@@ -96,7 +100,7 @@ a {
 }
 
 .buttons {
-  margin-top: 30rem;
+  margin-top: 10rem;
 }
 
 .vote-value {
