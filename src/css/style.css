@@ -85,6 +85,10 @@ a {
   text-align: center;
 }
 
+.qr-code {
+  margin-top: 10rem;
+}
+
 .button {
   margin-left: 5rem;
   margin-right: 1rem;
