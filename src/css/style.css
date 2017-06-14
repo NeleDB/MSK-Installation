@@ -24,6 +24,7 @@ h1 {
   color: white;
   font-size: 4rem;
   font-family: denmark;
+  margin-top: 2rem;
 }
 
 a {
@@ -38,11 +39,10 @@ a {
 .image {
   position: relative;
   z-index: -1;
-  height: 30rem;
+  height: 20rem;
   width: 28vw;
   object-fit: cover;
-  margin-top: 2rem;
-  margin-right: 3rem;
+  margin: 4rem 1.5rem;
   box-shadow: .5rem .8rem 2rem var(--dark-blue);
 }
 
@@ -54,9 +54,9 @@ a {
 .abc {
   position: absolute;
   z-index: 12;
-  margin-top: 31rem;
-  margin-left: 30rem;
-  font-size: 6rem;
+  margin-top: 23.5rem;
+  margin-left: 22rem;
+  font-size: 5rem;
   text-shadow: .5rem .8rem 2rem var(--dark-blue);
 }
 
@@ -99,18 +99,24 @@ a {
 }
 
 .buttons {
+<<<<<<< HEAD
   margin-top: 10rem;
+=======
+  display: flex;
+  justify-content: center;
+  margin-left: -4rem;
+  margin-top: 7rem;
+>>>>>>> development
 }
 
 .vote-value {
   color: black;
   font-size: 2.5rem;
   font-weight: 800;
-  width: 12rem;
-  margin-left: 16.5rem;
-  margin-top: 7rem;
   padding: 1rem 2rem;
   border-radius: 4rem;
+  width: 13rem;
+  margin-left: 9rem;
   background-color: white;
   box-shadow: .5rem .8rem 2rem var(--dark-blue);
 
@@ -165,4 +171,8 @@ a {
   background-color: var(--light-blue);
   box-shadow: .5rem .8rem 2rem var(--dark-blue);
   border-radius: 3rem;
+}
+
+.qr-img {
+  margin-top: 3rem;
 }

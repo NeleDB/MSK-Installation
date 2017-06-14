@@ -11,7 +11,7 @@ const End = ({handleAgain}) => {
   };
 
   return (
-    <div>
+    <div className='header'>
       <h1>Einde quiz</h1>
       <Link to='/' onClick={handleClickAgain}>Opnieuw</Link>
     </div>

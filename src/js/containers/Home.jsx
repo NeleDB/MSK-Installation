@@ -13,14 +13,14 @@ const Home = ({players, handleJoin}) => {
 
     <div className='startpage'>
       <div className='players'>
-        <img src='../../assets/img/nrOfPlayers.png' alt='nrOfPlayers'></img>
+        <img src='../../assets/svg/people-icon.svg' height='20' alt='nrOfPlayers'></img>
         <p className='playernumber'>{players}</p>
       </div>
       <div className='homebody'>
         <div className='header'>
           <h1>Vind awen match!</h1>
-          <p>Scan deze QR code met jouw mobiele telefoon om mee te doen</p>
-          <img className='qr-code' src='../../assets/img/qr-code-circle.png' width='324' height='324' />
+          <p className='desc'>Scan deze QR code met jouw mobiele telefoon om mee te doen</p>
+          <img className='qr-img' src='../../assets/img/qr-code-circle.png' width='320' height='320' />
         </div>
         <div className='buttons'>
           <Link to='/vote' target='_blank' className='button' onClick={handleClickJoin}>Join</Link>
