@@ -3,7 +3,7 @@ import {inject, observer} from 'mobx-react';
 import {number} from 'prop-types';
 import Question from '../components/Question/';
 
-const Questions = ({currentQuestion, playersLeft, players}) => {
+const Questions = ({currentQuestion, players}) => {
 
   return (
     <div className='startpage'>
@@ -26,14 +26,13 @@ const Questions = ({currentQuestion, playersLeft, players}) => {
 
 Questions.propTypes = {
   currentQuestion: number.isRequired,
-  playersLeft: number.isRequired,
   players: number.isRequired
 };
 
 export default inject(
   ({store}) => {
-    const {currentQuestion, playersLeft, players} = store;
-    return {currentQuestion, playersLeft, players};
+    const {currentQuestion, players} = store;
+    return {currentQuestion, players};
   }
 )(
   observer(Questions)
