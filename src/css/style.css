@@ -85,6 +85,10 @@ a {
   text-align: center;
 }
 
+.qr-code {
+  margin-top: 10rem;
+}
+
 .button {
   margin-left: 5rem;
   margin-right: 1rem;
@@ -167,4 +171,21 @@ a {
 
 .qr-img {
   margin-top: 3rem;
+}
+
+.end-div {
+  width: 90vw;
+  margin: 30rem auto;
+  text-align: center;
+}
+
+.button-end {
+  padding: 1rem 3rem;
+  border-radius: 4rem;
+  background-color: var(--light-blue);
+  box-shadow: .5rem .8rem 2rem var(--dark-blue);
+}
+
+.end-title {
+  margin: 4rem 0;
 }

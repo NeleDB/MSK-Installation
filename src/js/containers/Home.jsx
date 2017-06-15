@@ -1,13 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {inject, observer} from 'mobx-react';
-import {func, number} from 'prop-types';
+import {number} from 'prop-types';
 
-const Home = ({players, handleJoin}) => {
-
-  const handleClickJoin = () => {
-    handleJoin();
-  };
+const Home = ({players}) => {
 
   return (
 
@@ -23,7 +19,6 @@ const Home = ({players, handleJoin}) => {
           <img className='qr-img' src='../../assets/img/qr-code-circle.png' width='320' height='320' />
         </div>
         <div className='buttons'>
-          <Link to='/vote' target='_blank' className='button' onClick={handleClickJoin}>Join</Link>
           <Link to='/questions' className='button'>Start!</Link>
         </div>
       </div>
@@ -33,15 +28,14 @@ const Home = ({players, handleJoin}) => {
 };
 
 Home.propTypes = {
-  players: number.isRequired,
-  handleJoin: func.isRequired
+  players: number.isRequired
 };
 
 
 export default inject(
   ({store}) => {
-    const {players, handleJoin} = store;
-    return {players, handleJoin};
+    const {players} = store;
+    return {players};
   }
 )(
   observer(Home)
